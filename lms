@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        /* Basic styling, you can expand upon this */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .admin-section,
+        .user-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+    <nav>
+        <a href="#admin">Librarian Admin</a>
+        <a href="#user">User</a>
+    </nav>
+    
+    <section id="admin" class="admin-section">
+        <h2>Librarian Admin</h2>
+        <ul>
+            <li><a href="#admin-login">Login</a></li>
+            <li><a href="#add-book">Add Book</a></li>
+            <li><a href="#update-delete-book">Update/Delete Book</a></li>
+            <li><a href="#issue-book">Issue Book for Student</a></li>
+            <li><a href="#return-status">Return Book Status</a></li>
+            <li><a href="#make-fine">Make Fine</a></li>
+            <li><a href="#update-material">Update Material</a></li>
+            <li><a href="#view-material">View Material</a></li>
+        </ul>
+    </section>
+    
+    <section id="user" class="user-section">
+        <h2>User</h2>
+        <ul>
+            <li><a href="#user-login">Login</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#search-book">Search Book</a></li>
+            <li><a href="#borrow-history">My Borrow History</a></li>
+            <li><a href="#check-fine">Check Fine</a></li>
+            <li><a href="#search-material">Search Material</a></li>
+            <li><a href="#download-material">Download Material</a></li>
+            <li><a href="#my-profile">My Profile</a></li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Library Management System</p>
+    </footer>
+
+    <!-- Include your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
